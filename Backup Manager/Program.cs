@@ -18,7 +18,7 @@ namespace Backup_Manager
                 try
                 {
                     DirectoryInfo subdir = new DirectoryInfo(subdirString);
-                    if ((subdir.Name != "AppData" && subdir.Name != ".VirtualBox" && subdir.Name != "VirtualBox VMs") || copyAll)
+                    if ((subdir.Name != "AppData" && subdir.Name != ".VirtualBox" && subdir.Name != "VirtualBox VMs" && subdir.Name != "4K Video Downloader") || copyAll)
                     {
                         string outputSubdirString = output + "\\" + subdir.Name;
                         CopyFolder(subdirString, outputSubdirString, copyAll);
